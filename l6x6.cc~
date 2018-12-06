@@ -1,0 +1,35 @@
+# include <iostream> 
+using std::cout;
+using std::endl;
+using std::cin;
+
+int main() {
+	for (int tests = 1; tests <= 1000; tests++) {
+		int old_counter = 0;
+		int new_counter = 0;
+		int start_num;
+		start_num = tests;
+		cout << tests << endl;
+		while (start_num != 1);
+			cout << "newNum" << start_num << endl;
+			if ((start_num % 2) == 0) {
+				start_num = start_num / 2;
+				cout << "startnum" << start_num << endl;
+			}
+			else {
+				start_num = (start_num * 3) + 1;
+			}
+			new_counter += 1;
+			cout << "newcounter" << new_counter << endl;
+		if (new_counter > old_counter) {
+			cout << "new longest path" << start_num << endl;
+			old_counter = new_counter;
+		}
+	}
+
+}
+
+
+
+
+
